@@ -1,0 +1,63 @@
+{
+  "name": "blue-carbon-mrv-contract",
+  "version": "1.0.0",
+  "description": "Smart contract for managing blue carbon MRV data and carbon credit tokens on private Ethereum blockchain",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "deploy:bcc": "hardhat run scripts/deploy-blue-carbon-credit.js",
+    "deploy:bcc:local": "hardhat run scripts/deploy-blue-carbon-credit.js --network localhost",
+    "deploy:bcc:testnet": "hardhat run scripts/deploy-blue-carbon-credit.js --network testnet",
+    "deploy:bcc:mainnet": "hardhat run scripts/deploy-blue-carbon-credit.js --network mainnet",
+    "deploy:goerli": "hardhat run scripts/deploy-goerli.js --network goerli",
+    "deploy:sepolia": "hardhat run scripts/deploy-goerli.js --network sepolia",
+    "verify": "hardhat verify",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "coverage": "hardhat coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart-contract",
+    "carbon-credits",
+    "blue-carbon",
+    "mrv",
+    "openzeppelin",
+    "hardhat"
+  ],
+  "author": "Blue Carbon MRV Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-verify": "^2.0.1",
+    "@typechain/ethers-v6": "^0.4.3",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "ethers": "^6.8.1",
+    "hardhat": "^2.19.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.1",
+    "solhint": "^4.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
